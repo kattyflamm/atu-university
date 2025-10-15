@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Библиотека — ATU</title>
+  <link rel="stylesheet" href="../page.css">
+  <style>
+    :root {
+      --brand-color: hsl(190, 80%, 45%);
+      --brand-light: hsl(190, 85%, 96%);
+      --text-color: #0f172a;
+      --bg-color: #f6f8fc;
+    }
+
+    body {
+      background: linear-gradient(180deg, #f8fafc, #eef2f8);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+      color: var(--text-color);
+    }
+
+    header p {
+      color: #64748b;
+      font-size: 1rem;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 28px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* Навигация */
+    .library-nav {
+      position: sticky;
+      top: 24px;
+      align-self: start;
+      background: #fff;
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+    }
+
+    .library-nav a {
+      display: block;
+      padding: 10px 14px;
+      border-radius: 10px;
+      color: var(--text-color);
+      font-weight: 500;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .library-nav a:hover {
+      background: var(--brand-light);
+      color: var(--brand-color);
+      transform: translateX(4px);
+    }
+
+    /* Контент */
+    main {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid rgba(0,0,0,0.06);
+      padding: 24px 32px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+    }
+
+    .library-section {
+      padding: 32px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      scroll-margin-top: 80px;
+    }
+
+    .library-section:last-child {
+      border: none;
+    }
+
+    .library-section h2 {
+      color: var(--brand-color);
+      margin: 0 0 10px;
+      font-size: 1.4rem;
+    }
+
+    .library-section p, .library-section li {
+      color: #334155;
+      line-height: 1.6;
+    }
+
+    .library-section ul {
+      padding-left: 20px;
+    }
+
+    .btn-back {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 16px;
+      background: var(--brand-color);
+      color: #fff;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .btn-back:hover {
+      background: hsl(190, 85%, 40%);
+      transform: translateY(-2px);
+    }
+
+    /* Кнопка наверх */
+    #toTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--brand-color);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 46px;
+      height: 46px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      display: none;
+      transition: 0.3s;
+    }
+
+    #toTop:hover {
+      background: hsl(190, 85%, 40%);
+      transform: scale(1.1);
+    }
+
+    /* Адаптив */
+    @media (max-width: 900px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+      .library-nav {
+        position: static;
+      }
+    }
+  </style>
+</head>
+<body class="auth-page">
+  <div class="auth-card" style="max-width: 1200px;">
+    <header>
+      <h1>Библиотека АТУ</h1>
+      <p>Научная библиотека, электронные ресурсы и справочные материалы</p>
+    </header>
+
+    <div class="layout">
+      <nav class="library-nav">
+        <a href="#scientific">Научная база</a>
+        <a href="#library">Библиотека</a>
+        <a href="#eresources">Электронные ресурсы</a>
+        <a href="#recommend">Рекомендации</a>
+        <a href="#links">Полезные ссылки</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <main>
+        <section id="scientific" class="library-section">
+          <h2>Научная база</h2>
+          <p>В научной библиотеке АТУ представлены базы данных научных публикаций, диссертаций и журналов, доступных для студентов и преподавателей.</p>
+        </section>
+
+        <section id="library" class="library-section">
+          <h2>Библиотека</h2>
+          <p>Главный фонд библиотеки содержит более 300 000 изданий по всем направлениям подготовки университета.</p>
+        </section>
+
+        <section id="eresources" class="library-section">
+          <h2>Электронные ресурсы</h2>
+          <ul>
+            <li><a href="https://elibrary.ru/" target="_blank">eLibrary.ru</a></li>
+            <li><a href="https://cyberleninka.ru/" target="_blank">CyberLeninka</a></li>
+            <li><a href="https://openedu.ru/" target="_blank">OpenEdu</a></li>
+          </ul>
+        </section>
+
+        <section id="recommend" class="library-section">
+          <h2>Рекомендации</h2>
+          <p>Рекомендуемая литература по курсам, материалы для самостоятельного изучения и методические указания.</p>
+        </section>
+
+        <section id="links" class="library-section">
+          <h2>Полезные ссылки</h2>
+          <ul>
+            <li><a href="https://atu.edu.kz/" target="_blank">АТУ — официальный сайт</a></li>
+            <li><a href="https://atu.edu.kz/kk/news/" target="_blank">Новости университета</a></li>
+            <li><a href="https://library.kz/" target="_blank">Национальная библиотека РК</a></li>
+          </ul>
+        </section>
+
+        <section id="faq" class="library-section">
+          <h2>FAQ</h2>
+          <p><strong>Как получить доступ к электронным ресурсам?</strong><br>Для этого нужно авторизоваться через университетский аккаунт.</p>
+          <p><strong>Можно ли взять книги домой?</strong><br>Да, при наличии читательского билета.</p>
+        </section>
+
+        <section id="contacts" class="library-section">
+          <h2>Контакты</h2>
+          <p>📍 Адрес: Алматы, ул. Толе би 100</p>
+          <p>📞 Телефон: +7 (727) 123-45-67</p>
+          <p>✉️ Email: library@atu.edu.kz</p>
+        </section>
+
+        <a href="../index.html" class="btn-back">← На главную</a>
+      </main>
+    </div>
+  </div>
+
+  <button id="toTop">↑</button>
+
+  <script>
+    // кнопка наверх
+    const toTop = document.getElementById("toTop");
+    window.addEventListener("scroll", () => {
+      toTop.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+    toTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>

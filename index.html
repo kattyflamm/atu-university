@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <link rel="icon" type="image/png" href="media/logo-atupng.png">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>АТУ — портал</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <main>
+      <!-- Параллакс-сцена -->
+      <section class="parallax" id="parallax">
+        <div class="parallax-stick">
+          <img class="bg-img" src="media/fon0.jpg" alt="Горы и город" aria-hidden="true">
+          <img class="mid-img" src="media/fon0.5.png" alt="Средний план города" aria-hidden="true">
+          <div class="mid-gradient" aria-hidden="true"></div>
+          <img class="top-img" src="media/fon1.png" alt="Передний слой" aria-hidden="true">
+          <div class="overlay">
+            
+            <h1>АТУ — Алматинский Технологический Университет</h1>
+          </div>
+        </div>
+      </section>
+      <div class="after-parallax"></div>
+
+      <!-- Боковые стены для всего блока этажей -->
+      <div class="walls" aria-hidden="true">
+        <div class="wall wall-left"></div>
+        <div class="wall wall-right"></div>
+      </div>
+
+      <div class="divider wall-state" data-floor="6-5">
+        <div class="fc-line" aria-hidden="true"></div>
+        <div class="pol-potolok" aria-hidden="true"></div>
+      </div>
+
+      <section class="floor" style="--hue: 210;">
+        <div class="cover"></div>
+        <div class="content dashboard-grid">
+      
+          <div class="dash-card">
+            <img src="media/dashboard/schedule.png" alt="Расписание">
+            <div class="dash-info">
+              <h3>Расписание</h3>
+              <a class="btn" href="pages/floor-6.html?page=schedule">Открыть</a>
+            </div>
+          </div>
+      
+          <div class="dash-card">
+            <img src="media/dashboard/disciplines.png" alt="Мои дисциплины">
+            <div class="dash-info">
+              <h3>Мои дисциплины</h3>
+              <a class="btn" href="pages/floor-6.html?page=subjects">Открыть</a>
+            </div>
+          </div>
+      
+          <div class="dash-card">
+            <img src="media/dashboard/tasks.png" alt="Задания">
+            <div class="dash-info">
+              <h3>Задания</h3>
+              <a class="btn" href="pages/floor-6.html?page=tasks">Открыть</a>
+            </div>
+          </div>
+      
+          <div class="dash-card">
+            <img src="media/dashboard/courses.png" alt="Онлайн-курсы">
+            <div class="dash-info">
+              <h3>Онлайн-курсы</h3>
+              <a class="btn" href="pages/floor-6.html?page=courses">Открыть</a>
+            </div>
+          </div>
+      
+          <div class="dash-card">
+            <img src="media/dashboard/tests.png" alt="Тестирование и контроли">
+            <div class="dash-info">
+              <h3>Тестирование и контроли</h3>
+              <a class="btn" href="pages/floor-6.html?page=tests">Открыть</a>
+            </div>
+          </div>
+      
+          <div class="dash-card">
+            <img src="media/dashboard/grades.png" alt="Журнал оценок">
+            <div class="dash-info">
+              <h3>Журнал оценок</h3>
+              <a class="btn" href="pages/floor-6.html?page=grades">Открыть</a>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      
+      
+      <!-- Divider между этажами 6 и 5 -->
+      <div class="divider wall-state" data-floor="6-5">
+        <div class="fc-line" aria-hidden="true"></div>
+        <div class="pol-potolok" aria-hidden="true"></div>
+      </div>
+      
+      <section class="floor" style="--hue: 200;">
+        <div class="cover"></div>
+        <div class="content">
+          <article class="floor-card">
+            <h3>Новости</h3>
+            <a class="btn" href="pages/floor-5.html">Актуальные</a>
+            <a class="btn" href="pages/floor-5.html">Анонсы мероприятий</a>
+            <a class="btn" href="pages/floor-5.html">Объявления</a>
+
+          </article>
+        </div>
+      </section>
+      
+      <!-- Divider между этажами 5 и 4 -->
+      <div class="divider wall-state" data-floor="5-4">
+        <div class="fc-line" aria-hidden="true"></div>
+        <div class="pol-potolok" aria-hidden="true"></div>
+      </div>
+      
+      <section class="floor" style="--hue: 190;">
+        <div class="cover"></div>
+      
+        <div class="content">
+          <article class="floor-card">
+            <h3>Библиотека</h3>
+            <p>Научная библиотека АТУ</p>
+            <div class="btns">
+              <a class="btn" href="pages/floor-4.html#base">Научная база</a>
+              <a class="btn" href="pages/floor-4.html#library">Библиотека</a>
+              <a class="btn" href="pages/floor-4.html#resources">Электронные ресурсы</a>
+              <a class="btn" href="pages/floor-4.html#recommend">Рекомендации</a>
+              <a class="btn" href="pages/floor-4.html#links">Полезные ссылки</a>
+              <a class="btn" href="pages/floor-4.html#faq">FAQ</a>
+              <a class="btn" href="pages/floor-4.html#contacts">Контакты</a>
+            </div>
+          </article>
+        </div>
+      </section>
+      
+      
+      <!-- Divider между этажами 4 и 3 -->
+      <div class="divider wall-state" data-floor="4-3">
+        <div class="fc-line" aria-hidden="true"></div>
+        <div class="pol-potolok" aria-hidden="true"></div>
+      </div>
+      
+      <section class="floor" style="--hue: 180;">
+        <div class="cover"></div>
+
+        <div class="content">
+          <article class="floor-card">
+            <h3>Учебный план</h3>
+            <p>Учебный план по образовательной программе <p id="program-name"> (название программы)</p>
+            <a class="btn" href="pages/floor-3.html">Открыть</a>
+          </article>
+        </div>
+      </section>
+      
+      <!-- Divider между этажами 3 и 2 -->
+      <div class="divider wall-state" data-floor="3-2">
+        <div class="fc-line" aria-hidden="true"></div>
+        <div class="pol-potolok" aria-hidden="true"></div>
+      </div>
+      
+      <section class="floor" style="--hue: 170;">
+        <div class="cover"></div>
+
+        <div class="content">
+          <article class="floor-card">
+            <h3>Мой Эдвайзер</h3>
+            <p id="edviser-name">(имя эдвайзера)</p>
+            <a class="btn" href="pages/floor-2.html">Открыть</a>
+          </article>
+        </div>
+      </section>
+      
+      <!-- Divider между этажами 2 и 1 -->
+      <div class="divider wall-state" data-floor="2-1">
+        <div class="fc-line" aria-hidden="true"></div>
+        <div class="pol-potolok" aria-hidden="true"></div>
+      </div>
+      
+      <section class="floor" style="--hue: 160;">
+        <div class="cover"></div>
+
+        <div class="content">
+          <article class="floor-card">
+            <h3>Настройки профиля</h3>
+            <div class="profile-row">
+              <div class="profile-info">
+                <p id="user-name">(имя пользователя)</p>
+                <p id="group-name">(группа пользователя)</p>
+                <p id="program-name">(название программы)</p>
+                <div class="profile-actions">
+                  <a class="btn" href="pages/floor-1.html" id="profile-action">Настройки профиля</a>
+                  <button class="btn" id="exit-profile">Выйти</button>
+                </div>
+              </div>
+              <div class="profile-photo">
+                <div id="img-user" style="background-image: url('media/user.png');"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+       <!-- Divider между этажами 2 и 1 -->
+       <div class="divider wall-state" data-floor="2-1">
+        <div class="fc-line" aria-hidden="true"></div>
+        <div class="pol-potolok" aria-hidden="true"></div>
+      </div>
+
+      <!-- Лифт (управление этажами) -->
+      <div class="elevator" aria-hidden="false">
+        <button class="elev-btn elev-up" aria-label="Этаж выше">▲</button>
+        <div class="elev-indicator">
+          <span class="elev-floor-label">название этажа</span>
+          <span class="elev-floor-num" id="elev-floor">6</span>
+        </div>
+        <div class="elev-list">
+          <button class="elev-jump" data-floor="0">6</button>
+          <button class="elev-jump" data-floor="1">5</button>
+          <button class="elev-jump" data-floor="2">4</button>
+          <button class="elev-jump" data-floor="3">3</button>
+          <button class="elev-jump" data-floor="4">2</button>
+          <button class="elev-jump" data-floor="5">1</button>
+        </div>
+        <button class="elev-btn elev-down" aria-label="Этаж ниже">▼</button>
+      </div>
+
+      <!-- Тост-уведомление о регистрации/входе -->
+      <div class="toast-auth" role="dialog" aria-live="polite" aria-atomic="true" aria-modal="true">
+        <div class="toast-auth__content">
+          <div class="toast-auth__title">Вход в систему</div>
+          <form id="toast-login" class="toast-auth__form">
+            <input type="text" id="toast-user" placeholder="Логин" required>
+            <input type="password" id="toast-pass" placeholder="Пароль" required>
+            <label class="toast-file">
+              <input type="file" id="toast-photo" accept="image/*">
+              <span>Фото (необязательно)</span>
+            </label>
+            <button type="submit" class="toast-auth__btn">Войти</button>
+          </form>
+        </div>
+      </div>
+
+    </main>
+
+    <script src="js/bd.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/page.js"></script>
+
+  </body>
+  </html>
+
+

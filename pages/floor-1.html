@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Личный кабинет — АТУ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/page.css">
+  </head>
+  <body>
+    <main class="auth-page">
+      <section class="auth-card">
+        <h1 class="auth-title">Личный кабинет</h1>
+         <div class="auth-views">
+           <!-- PROFILE VIEW ONLY -->
+           <form class="auth-view" id="profile-view">
+            <div class="profile-grid">
+              <div>
+                <div class="field">
+                  <label>Имя</label>
+                  <input type="text" id="user-name" readonly>
+                  <button type="button" class="btn" id="toggle-name">Сменить имя</button>
+                </div>
+                <div class="field">
+                  <label>Группа</label>
+                  <div id="group-name" class="text-display"></div>
+                </div>
+                <div class="field">
+                  <label>Пароль</label>
+                  <input type="password" id="profile-pass" style="display:none">
+                  <button type="button" class="btn" id="toggle-pass">Сменить пароль</button>
+                </div>
+                <div class="actions">
+                  <button type="button" class="btn" id="save-profile">Сохранить</button>
+                  <a class="btn" href="../index.html">На главную</a>
+                </div>
+              </div>
+              <div class="avatar-wrap">
+                <img id="profile-avatar" alt="Аватар" />
+                <label class="btn" for="profile-photo">Сменить фото</label>
+                <input type="file" id="profile-photo" accept="image/*" hidden>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="../js/bd.js"></script>
+    <script src="../js/page.js"></script>
+    
+  </body>
+  </html>
+
